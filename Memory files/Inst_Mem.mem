@@ -1,0 +1,18 @@
+FFC4A303  // lw x6, -4(x9)
+0064A423  // sw x6, 8(x9)
+0062E233  // or x4, x5, x6
+00420863  // beq x4, x4, 32
+00000000  // Fill missing addresses (optional padding)
+00000000
+00000000
+0400056F  // jal x10, 128
+00000000  // Fill missing addresses up to 0x0080
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00800093  // addi x1, x0, 8
+
